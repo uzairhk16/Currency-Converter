@@ -22,7 +22,8 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className="w-full h-screen flex flex-wrap justify-center 
+      items-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url('https://images.pexels.com/photos/28209792/pexels-photo-28209792/free-photo-of-aerial-view-of-people-
         at-the-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
@@ -41,9 +42,7 @@ function App() {
                 label="From"
                 amount={amount}
                 currencyOptions={options}
-                onCurrencyChange={(currency) =>
-                  setAmount(amount)
-                }
+                onCurrencyChange={(currency) => setAmount(amount)}
                 selectCurrency={from}
               />
             </div>
